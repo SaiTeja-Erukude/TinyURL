@@ -1,0 +1,110 @@
+body {
+    text-align: center;
+    min-height: 96vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    color: #ffffff;
+    background-color: rgb(81, 40, 136);
+    padding: 0.1em;
+}
+
+#form {
+    margin: 2em;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #bcc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    width: 65vw;
+    margin-top: 2em;
+}
+
+.input-field:focus {
+    box-shadow: 0 0 0 2px rgb(81, 40, 136, 0.7);
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(81, 40, 136);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltiptext {
+    margin-left: 1em;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(81, 40, 136);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2em;
+}
+
+.button:hover {
+    background-color: rgb(81, 40, 136, 0.7);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 2em 0 -1.5em 0;
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, .15);
+    color: rgba(0, 0, 0, .7);
+    font-weight: 500;
+    padding: 1em;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+.error {
+    box-shadow: 0 0 1.5px 2px rgb(255, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.success {
+    box-shadow: 0 0 1.5px 2px rgb(0, 255, 0);
+    font-weight: bold;
+}

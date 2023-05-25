@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyURL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="title">
+        <h3>Welcome to TinyURL!</h3>
+    </div>
+
+    <div id="form">
+        <input type="text" id="redirectURL" class="input-field" required placeholder="Enter a long URL here">
+        <div class="tooltip">
+            <input type="text" id="shortID" class="input-field" placeholder="Any aliases in your mind?">
+            <span class="tooltiptext">We will try to replace your original URL with this alias. Eg: JohnDoe</span>
+        </div>
+
+        <div class="button-container">
+            <button class="button" id="shortenBtn">Shorten</button>
+        </div>
+
+        <label for="tinyURL">Your Tiny URL</label>
+        <input type="text" id="tinyURL" class="input-field" disabled>
+    </div>
+
+    <p class="footer">Copyright &copy; Sai Teja Erukude 2023</p>
+    <script src="script.js"></script>
+</body>
+
+</html>

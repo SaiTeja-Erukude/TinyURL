@@ -1,0 +1,23 @@
+{
+  "name": "tinyurl",
+  "version": "1.0.0",
+  "description": "A URL shortener built using Node, Knex and PostgreSQL.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Sai Teja Erukude",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "knex": "^2.4.2",
+    "pg": "^8.11.0",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
